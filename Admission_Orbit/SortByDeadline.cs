@@ -17,6 +17,8 @@ namespace Admission_Orbit
         public SortByDeadline()
         {
             InitializeComponent();
+            dgvUniversities.CellContentClick += dgvUniversities_CellContentClick;
+
             dgvUniversities.AutoGenerateColumns = false;
             LoadUniversityData();
         }

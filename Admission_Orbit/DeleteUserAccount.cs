@@ -95,5 +95,14 @@ namespace Admission_Orbit
            AdminPublicPrivate adminPublicPrivate= new AdminPublicPrivate();
             adminPublicPrivate.Show();
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            DataGridViewRow row = dataGridView1.SelectedRows[0];
+            textBox1.Text= row.Cells[3].Value.ToString();
+            textBox2.Text = row.Cells[4].Value.ToString();
+        }
     }
 }

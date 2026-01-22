@@ -574,7 +574,12 @@ VALUES
             adminPrivateDashboard.Show();
 
         }
+
+        private void textBox37_TextChanged(object sender, EventArgs e)
+        {
+
         }
+    }
 
     }
 

@@ -88,7 +88,7 @@ namespace Admission_Orbit
 
                         UserSession.Email = email;
 
-                        // Optional: send registration email
+                        
                         EmailHelper.SendEmail(
                             email,
                             "Registration Successful",

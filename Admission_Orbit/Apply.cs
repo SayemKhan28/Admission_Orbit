@@ -30,7 +30,7 @@ namespace Admission_Orbit
             cmbUniversities.Items.Add("GST");
             cmbUniversities.Items.Add("Rajshahi University");
 
-            //   cmbUniversities.SelectedIndex = 0; 
+             
         }
 
         private double GetAdmissionFee(string uni)
@@ -85,7 +85,7 @@ namespace Admission_Orbit
         {
             this.Hide();
             publicPrivate publicPrivate = new publicPrivate();
-            publicPrivate = new publicPrivate();
+            publicPrivate.Show();
 
         }
     }

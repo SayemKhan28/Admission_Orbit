@@ -37,7 +37,7 @@ namespace Admission_Orbit
                 }
             }
         }
-        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+       /* private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
 
@@ -71,6 +71,7 @@ namespace Admission_Orbit
 
 
         }
+        */
         private void EditPublic_Load(object sender, EventArgs e)
         {
 
@@ -377,6 +378,39 @@ namespace Admission_Orbit
                 }
 
             }
+
+        }
+
+        private void dataGridView1_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (e.RowIndex < 0)
+                return;
+            DataGridViewRow row = dataGridView1.SelectedRows[0];
+            textBox1.Text = row.Cells[0].Value.ToString();
+            textBox2.Text = row.Cells[1].Value.ToString();
+            textBox3.Text = row.Cells[2].Value.ToString();
+            textBox4.Text = row.Cells[3].Value.ToString();
+            textBox5.Text = row.Cells[4].Value.ToString();
+            textBox6.Text = row.Cells[5].Value.ToString();
+
+            ClearCheckedList(checkedListBox1);
+            ClearCheckedList(checkedListBox2);
+            ClearCheckedList(checkedListBox3);
+            ClearCheckedList(checkedListBox4);
+            ClearCheckedList(checkedListBox5);
+
+            SetCheckedItems(checkedListBox1, row.Cells[6].Value.ToString());
+            SetCheckedItems(checkedListBox2, row.Cells[7].Value.ToString());
+            SetCheckedItems(checkedListBox3, row.Cells[8].Value.ToString());
+            SetCheckedItems(checkedListBox4, row.Cells[9].Value.ToString());
+            SetCheckedItems(checkedListBox5, row.Cells[15].Value.ToString());
+
+            textBox7.Text = row.Cells[10].Value.ToString();
+            textBox8.Text = row.Cells[11].Value.ToString();
+            textBox9.Text = row.Cells[12].Value.ToString();
+            textBox10.Text = row.Cells[13].Value.ToString();
+            textBox11.Text = row.Cells[14].Value.ToString();
 
         }
     }

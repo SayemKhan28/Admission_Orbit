@@ -20,6 +20,8 @@ namespace Admission_Orbit
         public SortByAdd()
         {
             InitializeComponent();
+            dgvUniversities.CellContentClick += dgvUniversities_CellContentClick;
+
             dgvUniversities.AutoGenerateColumns = false;
             LoadUniversityData();
         }

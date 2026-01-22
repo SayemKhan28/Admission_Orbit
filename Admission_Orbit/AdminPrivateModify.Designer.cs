@@ -154,7 +154,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 49);
             this.button1.TabIndex = 186;
-            this.button1.Text = "Add";
+            this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -887,7 +887,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(141, 49);
             this.button3.TabIndex = 189;
-            this.button3.Text = "Update";
+            this.button3.Text = "View";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -898,14 +898,16 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(407, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(508, 200);
             this.dataGridView1.TabIndex = 190;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick_1);
             // 
             // AdminPrivateModify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1621, 897);
+            this.ClientSize = new System.Drawing.Size(1690, 969);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.checkedListBox1);

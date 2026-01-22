@@ -22,7 +22,7 @@ namespace Admission_Orbit
             string connectionString = "Data Source= SAYEM\\SQLEXPRESS; database=master; integrated security=SSPI";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT * FROM Registration";
+                string query = "SELECT * FROM Modified";
                 using (SqlDataAdapter sda = new SqlDataAdapter(query, connection))
                 {
                     DataTable data = new DataTable();
@@ -67,10 +67,10 @@ namespace Admission_Orbit
             }
 
         }
-        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+       /* private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             textBox2.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-        }
+        }*/
 
 
         private void button2_Click(object sender, EventArgs e)
@@ -134,6 +134,20 @@ namespace Admission_Orbit
             AdminPrivateDashboard adminPrivateDashboard= new AdminPrivateDashboard();   
             adminPrivateDashboard.Show();
         }
-       
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_MouseDoubleClick_1(object sender, MouseEventArgs e)
+        {
+            textBox2.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+        }
     }
 }

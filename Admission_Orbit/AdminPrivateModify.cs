@@ -49,7 +49,7 @@ namespace Admission_Orbit
         {
             BindGridView();
         }
-        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+       /* private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0)
                 return;
@@ -105,7 +105,7 @@ namespace Admission_Orbit
 
 
 
-        }
+        }*/
         private void ClearCheckedList(CheckedListBox clb)
         {
             for (int i = 0; i < clb.Items.Count; i++)
@@ -559,8 +559,67 @@ WHERE [University Name] = @UniversityName;
 
         }
 
-        
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
+
+        private void dataGridView1_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            DataGridViewRow row = dataGridView1.SelectedRows[0];
+            textBox1.Text = row.Cells[0].Value.ToString();
+            textBox2.Text = row.Cells[1].Value.ToString();
+            textBox3.Text = row.Cells[2].Value.ToString();
+            textBox4.Text = row.Cells[3].Value.ToString();
+            textBox5.Text = row.Cells[4].Value.ToString();
+            textBox6.Text = row.Cells[5].Value.ToString();
+            textBox7.Text = row.Cells[6].Value.ToString();
+            textBox8.Text = row.Cells[7].Value.ToString();
+            textBox9.Text = row.Cells[8].Value.ToString();
+            textBox10.Text = row.Cells[9].Value.ToString();
+            textBox11.Text = row.Cells[10].Value.ToString();
+            textBox12.Text = row.Cells[11].Value.ToString();
+            textBox13.Text = row.Cells[12].Value.ToString();
+            textBox14.Text = row.Cells[13].Value.ToString();
+            textBox15.Text = row.Cells[14].Value.ToString();
+            textBox16.Text = row.Cells[15].Value.ToString();
+            textBox17.Text = row.Cells[16].Value.ToString();
+            textBox18.Text = row.Cells[17].Value.ToString();
+            textBox19.Text = row.Cells[18].Value.ToString();
+            textBox20.Text = row.Cells[19].Value.ToString();
+            textBox21.Text = row.Cells[20].Value.ToString();
+            textBox22.Text = row.Cells[21].Value.ToString();
+            textBox23.Text = row.Cells[22].Value.ToString();
+            textBox24.Text = row.Cells[23].Value.ToString();
+            textBox25.Text = row.Cells[24].Value.ToString();
+            textBox26.Text = row.Cells[25].Value.ToString();
+            textBox27.Text = row.Cells[26].Value.ToString();
+            textBox28.Text = row.Cells[27].Value.ToString();
+            textBox29.Text = row.Cells[28].Value.ToString();
+            textBox30.Text = row.Cells[29].Value.ToString();
+            textBox31.Text = row.Cells[30].Value.ToString();
+            textBox32.Text = row.Cells[31].Value.ToString();
+            textBox33.Text = row.Cells[32].Value.ToString();
+            textBox34.Text = row.Cells[33].Value.ToString();
+            textBox35.Text = row.Cells[34].Value.ToString();
+            textBox36.Text = row.Cells[35].Value.ToString();
+            textBox37.Text = row.Cells[36].Value.ToString();
+            textBox38.Text = row.Cells[37].Value.ToString();
+            textBox39.Text = row.Cells[38].Value.ToString();
+
+            ClearCheckedList(checkedListBox1);
+            SetCheckedItems(checkedListBox1, row.Cells[39].Value.ToString());
+
+            textBox40.Text = row.Cells[40].Value.ToString();
+            textBox41.Text = row.Cells[41].Value.ToString();
+            textBox42.Text = row.Cells[42].Value.ToString();
+            textBox43.Text = row.Cells[43].Value.ToString();
+            textBox44.Text = row.Cells[44].Value.ToString();
+
+
+        }
     }
 
 }

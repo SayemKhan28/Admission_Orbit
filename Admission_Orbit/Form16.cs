@@ -53,10 +53,6 @@ namespace Admission_Orbit
         }
 
 
-
-
-
-
         private decimal GetTuitionFee(string university, string department)
         {
             
@@ -67,19 +63,10 @@ namespace Admission_Orbit
         private void Form16_Load(object sender, EventArgs e)
         {
             decimal budget = 500000; 
-            CalculateScholarship(20);
-           
+            CalculateScholarship(20);  
         }
 
-        
-
-        
-
-        
-
       
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             
